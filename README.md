@@ -28,7 +28,7 @@ library("devtools")
 install_github("transbioZI/RMTL")
 ```
 
-2) Install from the source code 
+3) Install from the source code 
 ```shell
 git clone https://github.com/transbioZI/RMTL.git
 R CMD build ./RMTL/
@@ -39,7 +39,7 @@ R CMD INSTALL RMTL*.tar.gz
 The tutorial of multi-task learning using RMTL can be found [here](https://cran.r-project.org/web/packages/RMTL/vignettes/rmtl.html).
 
 # Manual
-Please check ["RMTL-manuel.pdf"](https://github.com/transbioZI/RMTL/blob/master/RMTL-manual.pdf) for more details.
+Please check ["RMTL-manuel.pdf"](https://github.com/transbioZI/RMTL/blob/master/RMTL-manuel.pdf) for more details.
 
 # Reference
 [Cao, Han, Jiayu Zhou and Emanuel Schwarz. "RMTL: An R Library for Multi-Task Learning." Bioinformatics (2018).](https://doi.org/10.1093/bioinformatics/bty831)
