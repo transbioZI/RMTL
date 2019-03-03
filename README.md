@@ -15,20 +15,20 @@ install.packages("fields")
 
 # Installation
 
-1) Install from CRAN in R (Recommend)
+1) Install from CRAN in R environment (Recommend)
 ```R
 install.packages("RMTL")
-# in this way, the required packages are installed automatically
+# in this way, the requirement for installation are automatically checked.
 ```
 
-1) Install from github in R (Recommend)
+2) Install from github in R environment
 ```R
 install.packages("devtools")
 library("devtools")
 install_github("transbioZI/RMTL")
 ```
 
-2) Install from the source code in shell
+2) Install from the source code 
 ```shell
 git clone https://github.com/transbioZI/RMTL.git
 R CMD build ./RMTL/
