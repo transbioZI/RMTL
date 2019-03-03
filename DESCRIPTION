@@ -1,0 +1,25 @@
+Package: RMTL
+Title: Regularized Multi-Task Learning
+Type: Package
+Version: 0.9
+Authors@R: c(person("Han", "Cao", email=c("hank9cao@gmail.com", "han.cao@zi-mannheim.de"), role=c("cre", "aut", "cph")), 
+  person("Emanuel", "Schwarz", email="emanuel.schwarz@zi-mannheim.de", role="aut"))
+Description: Efficient solvers for 10 regularized multi-task learning algorithms applicable for regression, classification, joint feature selection, task clustering, low-rank learning, sparse learning and network incorporation. Based on the accelerated gradient descent method, the algorithms feature a state-of-art computational complexity O(1/k^2). Sparse model structure is induced by the solving the proximal operator. The detail of the package is described in the paper of Han Cao and Emanuel Schwarz (2018) <doi:10.1093/bioinformatics/bty831>.
+Depends: R (>= 3.5.0)
+URL: https://github.com/transbioZI/RMTL
+BugReports: https://github.com/transbioZI/RMTL/issues
+Imports: MASS (>= 7.3-50), psych (>= 1.8.4), corpcor (>= 1.6.9),
+        doParallel (>= 1.0.14), foreach (>= 1.4.4)
+Date: 2019-02-15
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 6.1.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2019-02-18 12:44:17 UTC; han.cao
+Author: Han Cao [cre, aut, cph],
+  Emanuel Schwarz [aut]
+Maintainer: Han Cao <hank9cao@gmail.com>
+Repository: CRAN
+Date/Publication: 2019-02-27 17:00:33 UTC

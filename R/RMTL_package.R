@@ -1,0 +1,52 @@
+#' RMTL: Regularized Multi-Task Learning
+#'
+#' This package provides an efficient implementation of regularized
+#' multi-task learning (MTL) comprising 10 algorithms applicable for
+#' regression, classification, joint feature selection, task clustering,
+#' low-rank learning, sparse learning and network incorporation. All
+#' algorithms are implemented based on the accelerated gradient descent
+#' method and feature a complexity of O(1/k^2). Parallel computing is allowed to improve the efficiency. Sparse model structure
+#' is induced by the solving the proximal operator.
+#'
+#'  This package provides 10 multi-task learning  algorithms (5
+#'  classification and 5 regression), which incorporate five 
+#'  regularization strategies for knowledge transferring among tasks. All
+#'  algorithms share the same framework:
+#'  
+#'  \deqn{\min\limits_{W,C}
+#'    \sum_{i}^{t}{L(W_i, C_i|X_i, Y_i)} + \lambda_1\Omega(W) + \lambda_2{||W||}_F^2}
+#'
+#'  where \eqn{L(\circ)} is the loss function (logistic loss for classification or least square loss for linear regression). 
+#'  \eqn{\Omega(\circ)} is the cross-task regularization for knowledge transfer, and \eqn{||W||_F^2} is used for improving the 
+#'  generalization. \eqn{X=\{X_i= n_i \times p | i \in \{1,...,t\}\}} and \eqn{Y=\{Y_i=n_i \times 1 | i \in \{1,...,t\}\}} are 
+#'  predictors matrices and responses of \eqn{t} tasks respectively, while each task \eqn{i} contains \eqn{n_i} subjects and \eqn{p} 
+#'  predictors. \eqn{W=p \times t} is the coefficient matrix, where \eqn{W_i}, the \eqn{i}th column of \eqn{W}, 
+#'  refers to the coefficient vector of task \eqn{i}. 
+#'  
+#'  The function \eqn{\Omega(W)} jointly modulates multi-task models(\eqn{\{W_1, W_2, ..., W_t\}}) according to specific 
+#'  prior structure of \eqn{W}. In this package, 5 common regularization methods are implemented to incorporate different priors, i.e.  
+#'  sparse structure (\eqn{\Omega(W)=||W||_1}), joint feature selection (\eqn{\Omega(W)=||W||_{2,1}}), low-rank structure
+#'  (\eqn{\Omega(W)=||W||_*}), network-based relatedness across tasks (\eqn{\Omega(W)=||WG||_F^2}) and task clustering
+#'  (\eqn{\Omega(W)=tr(W^TW)-tr(F^TW^TWF)}). To call a specific method correctly, the corresponding "short name" has to be given. 
+#'  Follow the above sequence of methods, the short names are defined: \code{L21}, \code{Lasso}, \code{Trace}, \code{Graph} 
+#'  and \code{CMTL} 
+#'    
+#'  
+#'  For all algorithms, we implemented an solver based on the accelerated
+#'  gradient descent method, which takes advantage of information from the
+#'  previous two iterations to calculate the current gradient and then
+#'  achieves an improved convergent rate. To solve the non-smooth and convex
+#'  regularizer, the proximal operator is applied. Moreover, backward
+#'  line search is used to determine the appropriate step-size in each
+#'  iteration. Overall, the solver achieves a complexity of
+#'  \eqn{O(\frac{1}{k^2})} and is optimal among first-order gradient
+#'  descent methods.
+#'  
+#'  For the academic references of the implemented algorithms, the users are referred to the paper (doi:10.1093/bioinformatics/bty831) or 
+#'  the vignettes in the package.
+#'
+#' @docType package
+#' @name RMTL-package
+NULL
+
+
