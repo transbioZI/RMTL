@@ -14,6 +14,7 @@ install.packages("fields")
 ```
 
 # Installation
+You can choose any of the three ways to install RMTL.
 
 1) Install from CRAN in R environment (Recommend)
 ```R
