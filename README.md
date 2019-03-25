@@ -2,7 +2,7 @@
 Regularized Multi-task Learning in R
 
 # Description 
-This package provides an efficient implementation of regularized multi-task learning comprising 10 algorithms applicable for regression, classification, joint feature selection, task clustering, low-rank learning, sparse learning and network incorporation. All algorithms are implemented basd on the accelerated gradient descent method and feature a complexity of O(1/k^2). Sparse model structure is induced by the solving the proximal operator. The package has been uploaded in the CRAN: https://cran.r-project.org/web/packages/RMTL/index.html
+This package provides an efficient implementation of regularized multi-task learning comprising 10 algorithms applicable for regression, classification, joint feature selection, task clustering, low-rank learning, sparse learning and network incorporation. All algorithms are implemented basd on the accelerated gradient descent method and feature a complexity of O(1/k^2). Sparse model structure is induced by the solving the proximal operator. The package has been uploaded in the CRAN:  https://CRAN.R-project.org/package=RMTL
 
 # Required Packages
 Four packages have to be instaled in advanced to enable functions i.e. eigen-decomposition, 2D plotting: ‘MASS’, ‘psych’, ‘corpcor’ and ‘fields’. You can install them from the CRAN.
