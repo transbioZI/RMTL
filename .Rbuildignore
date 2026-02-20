@@ -1,0 +1,13 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.git$
+^\.gitignore$
+^CRAN_RESUBMISSION\.md$
+^cran-comments\.md$
+^submit_to_cran\.sh$
+^RMTL\.Rcheck$
+^.*\.tar\.gz$
+^check_output\.log$
+^MD5$
+^README\.md$
+^\.DS_Store$

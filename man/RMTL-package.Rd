@@ -2,6 +2,7 @@
 % Please edit documentation in R/RMTL_package.R
 \docType{package}
 \name{RMTL-package}
+\alias{RMTL}
 \alias{RMTL-package}
 \title{RMTL: Regularized Multi-Task Learning}
 \description{
@@ -22,7 +23,7 @@ This package provides 10 multi-task learning  algorithms (5
  \deqn{\min\limits_{W,C}
    \sum_{i}^{t}{L(W_i, C_i|X_i, Y_i)} + \lambda_1\Omega(W) + \lambda_2{||W||}_F^2}
 
-where \eqn{L(\circ)} is the loss function (logistic loss for classification or least square loss for linear regression). 
+ where \eqn{L(\circ)} is the loss function (logistic loss for classification or least square loss for linear regression). 
  \eqn{\Omega(\circ)} is the cross-task regularization for knowledge transfer, and \eqn{||W||_F^2} is used for improving the 
  generalization. \eqn{X=\{X_i= n_i \times p | i \in \{1,...,t\}\}} and \eqn{Y=\{Y_i=n_i \times 1 | i \in \{1,...,t\}\}} are 
  predictors matrices and responses of \eqn{t} tasks respectively, while each task \eqn{i} contains \eqn{n_i} subjects and \eqn{p} 
@@ -48,6 +49,24 @@ where \eqn{L(\circ)} is the loss function (logistic loss for classification or l
  \eqn{O(\frac{1}{k^2})} and is optimal among first-order gradient
  descent methods.
  
- For the academic references of the implemented algorithms, the readers are referred to the paper (doi:10.1093/bioinformatics/bty831) or 
+ For the academic references of the implemented algorithms, the users are referred to the paper (doi:10.1093/bioinformatics/bty831) or 
  the vignettes in the package.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/transbioZI/RMTL}
+  \item Report bugs at \url{https://github.com/transbioZI/RMTL/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Han Cao \email{hank9cao@gmail.com} [copyright holder]
+
+Authors:
+\itemize{
+  \item Emanuel Schwarz \email{emanuel.schwarz@zi-mannheim.de}
+}
+
+}
+\keyword{internal}

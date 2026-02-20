@@ -195,7 +195,7 @@ predict.MTL <- function(object, newX=NULL, ...){
 #'
 #' @export
 calcError <- function(m, newX=NULL, newY=NULL){
-    if(class(m)!="MTL"){
+    if(!inherits(m, "MTL")){
         stop("The first arguement is not a MTL model")}
     if(!is.null(newX) & !is.null(newY)){
         task_num <- length(newY)
@@ -234,7 +234,7 @@ calcError <- function(m, newX=NULL, newY=NULL){
 #'
 #' @export
 plotObj <- function(m){
-    if(class(m)!="MTL"){
+    if(!inherits(m, "MTL")){
         stop("The first arguement is not a MTL model")}
     graphics::plot(m$Obj, xlab="iterations", ylab="objective value")
 }

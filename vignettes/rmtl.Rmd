@@ -7,17 +7,22 @@ output: rmarkdown::html_vignette
 tables: true
 bibliography: rmtl.bib
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{An Tutorial for Regularized Multi-task Learning using the package RMTL}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r setup, include = FALSE}
+```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
+
+```{r setup}
+library(RMTL)
+```
+
 ## Abstract
 This package provides an efficient implementation of regularized multi-task learning (MTL) comprising 10 algorithms applicable for regression, classification, joint feature selection, task clustering, low-rank learning, sparse learning and network incorporation [@Cao2018]. All algorithms are implemented using the accelerated proximal algorithm and feature a complexity of O(1/k^2). In this tutorial, we show the theory and modeling of MTL with examples using the RMTL.
 

@@ -4,9 +4,18 @@
 \alias{MTL}
 \title{Train a multi-task learning model.}
 \usage{
-MTL(X, Y, type = "Classification", Regularization = "L21",
-  Lam1 = 0.1, Lam1_seq = NULL, Lam2 = 0, opts = list(init = 0, tol
-  = 10^-3, maxIter = 1000), G = NULL, k = 2)
+MTL(
+  X,
+  Y,
+  type = "Classification",
+  Regularization = "L21",
+  Lam1 = 0.1,
+  Lam1_seq = NULL,
+  Lam2 = 0,
+  opts = list(init = 0, tol = 10^-3, maxIter = 1000),
+  G = NULL,
+  k = 2
+)
 }
 \arguments{
 \item{X}{A set of feature matrices}

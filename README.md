@@ -37,10 +37,10 @@ R CMD INSTALL RMTL*.tar.gz
 ```
 
 # Tutorial
-The tutorial of multi-task learning using RMTL can be found [here](https://cran.r-project.org/web/packages/RMTL/vignettes/rmtl.html).
+The tutorial of multi-task learning using RMTL can be found [here](https://CRAN.R-project.org/package=RMTL).
 
 # Manual
-Please check ["RMTL-manuel.pdf"](https://cran.r-project.org/web/packages/RMTL/RMTL.pdf) for more details.
+Please check ["RMTL-manuel.pdf"](https://CRAN.R-project.org/package=RMTL) for more details.
 
 # Reference
 [Cao, Han, Jiayu Zhou and Emanuel Schwarz. "RMTL: An R Library for Multi-Task Learning." Bioinformatics (2018).](https://doi.org/10.1093/bioinformatics/bty831)

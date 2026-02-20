@@ -4,10 +4,21 @@
 \alias{cvMTL}
 \title{K-fold cross-validation}
 \usage{
-cvMTL(X, Y, type = "Classification", Regularization = "L21",
-  Lam1_seq = 10^seq(1, -4, -1), Lam2 = 0, G = NULL, k = 2,
-  opts = list(init = 0, tol = 10^-3, maxIter = 1000), stratify = FALSE,
-  nfolds = 5, ncores = 2, parallel = FALSE)
+cvMTL(
+  X,
+  Y,
+  type = "Classification",
+  Regularization = "L21",
+  Lam1_seq = 10^seq(1, -4, -1),
+  Lam2 = 0,
+  G = NULL,
+  k = 2,
+  opts = list(init = 0, tol = 10^-3, maxIter = 1000),
+  stratify = FALSE,
+  nfolds = 5,
+  ncores = 2,
+  parallel = FALSE
+)
 }
 \arguments{
 \item{X}{A set of feature matrices}

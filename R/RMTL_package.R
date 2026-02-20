@@ -45,8 +45,7 @@
 #'  For the academic references of the implemented algorithms, the users are referred to the paper (doi:10.1093/bioinformatics/bty831) or 
 #'  the vignettes in the package.
 #'
-#' @docType package
-#' @name RMTL-package
-NULL
+#' @keywords internal
+"_PACKAGE"
 
 

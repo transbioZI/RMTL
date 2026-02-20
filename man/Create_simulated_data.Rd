@@ -4,8 +4,13 @@
 \alias{Create_simulated_data}
 \title{Create an example dataset for testing the MTL algorithm}
 \usage{
-Create_simulated_data(t = 5, p = 50, n = 20, type = "Regression",
-  Regularization = "L21")
+Create_simulated_data(
+  t = 5,
+  p = 50,
+  n = 20,
+  type = "Regression",
+  Regularization = "L21"
+)
 }
 \arguments{
 \item{t}{Number of tasks}
